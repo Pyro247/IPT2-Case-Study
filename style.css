@@ -157,8 +157,6 @@
     }
     
 }
-
-
 /* Learning */
 .learning_section{
     width: 100%;
@@ -171,13 +169,10 @@
     background-position: center;
     
 }
-
 .learning_wrapper{
     padding: 0 50px;
     
 }
-
-
 .learning_wrapper h3{
     font-size: 3.5rem;
     color: var(--white-color)
