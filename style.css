@@ -20,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 
 
@@ -35,7 +36,6 @@
     padding: 5px;
     z-index: 999;
     transition: 500ms;
-    
 }
 
 
@@ -57,12 +57,9 @@
     font-weight: 400;
 }
 
-
-
 .lp_nav_left ul li a:hover, .lp_nav_right ul li a:hover{
     color: #0d6efd;
 }
-
 .lp_nav_mid{
     display: flex;
     flex-direction: column;
@@ -75,7 +72,6 @@
     height: 55px;
     
 }
-
 .lp_nav_mid p{
     font-size: 3rem;
     font-family: var(--font-school-name);
