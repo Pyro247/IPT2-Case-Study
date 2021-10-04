@@ -213,7 +213,6 @@
   font-weight: 500;
   color: var(--white-color);
 }
-
 /* About Section */
 .about_section {
   height: 100vh;
@@ -222,13 +221,11 @@
   overflow-x: hidden;
   background-attachment: fixed;
 }
-
 .about_section .about_wrapper {
   display: flex;
   margin-left: 100px;
   padding: 20px 0;
 }
-
 .about_section .about_wrapper .about_wrapper_left img {
   width: 600px;
   height: 500px;
@@ -237,7 +234,6 @@
   border: 2px solid #7f7fd5;
   box-shadow: 5px 5px 1px #1e1e1e;
 }
-
 .about_section .about_wrapper .about_wrapper_right {
   display: flex;
   flex-direction: column;
@@ -245,7 +241,6 @@
   width: 100%;
   position: relative;
 }
-
 .about_section .about_wrapper .about_wrapper_right q {
   font-size: 2rem;
   color: #0d6efd;
