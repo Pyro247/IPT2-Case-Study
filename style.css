@@ -317,7 +317,7 @@
 }
 
 .mvo.mission::before {
-  background-image: url("/images/mvo_mission.png");
+  background-image: url("./images/mvo_mission.png");
   background-size: 120px 120px;
   display: block;
   margin: 3px auto;
@@ -327,7 +327,7 @@
 }
 
 .mvo.vission::before {
-  background-image: url("/images/mvo_vission.png");
+  background-image: url("./images/mvo_vission.png");
   background-size: 110px 110px;
   display: block;
   margin: 3px auto;
@@ -337,7 +337,7 @@
 }
 
 .mvo.objectives::before {
-  background-image: url("/images/mvo_objectives.png");
+  background-image: url("./images/mvo_objectives.png");
   background-size: 120px 120px;
   display: block;
   margin: 3px auto;

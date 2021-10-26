@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100&family=Zilla+Slab&display=swap");
+
+/* Note|| Font stle is 'Poppins' 16px */
+
+:root {
+  font-size: 16px;
+  --black-color: rgb(31, 29, 28);
+  --white-color: #ffffff;
+  --blue-color: #56a8cbff;
+  --green-color: #3fd4b7;
+  --input-background-color: rgb(194, 207, 219);
+  --font-school-name: "Zilla Slab", serif;
+  --font-tagline: "Overpass", sans-serif;
+  --fontawsome: "Font Awesome 5 Free";
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--white-color);
+}
+
+
+/* LOADERRRR */
+.loader-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1e1e1e;
+  z-index: 1000;
+}
+.wrapper {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle 0.5s alternate infinite ease;
+}
+
+@keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0%;
+  }
+}
+.circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+.circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+.shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow 0.5s alternate infinite ease;
+}
+
+@keyframes shadow {
+  0% {
+    transform: scaleX(1.5);
+  }
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+.shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+.shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+.wrapper span {
+  position: absolute;
+  top: 75px;
+  font-family: "Lato";
+  font-size: 25px;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+
+html, body{
+  background: linear-gradient(#1e1e1e, #153760);
+}
+.bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(25%)
+}
+
+
+/* POPUP VALIDATORRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
+
+.popup-validator.active {
+  top: 5%;
+  user-select: none;
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.popup-validator {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 2px 15px #0d6efd;
+  border-radius: 15px;
+  transition: 300ms ease;
+  animation: popupAnimate 500ms ease;
+  z-index: 999;
+}
+
+@keyframes popupAnimate {
+  0% {
+    top: -10%;
+  }
+}
+
+form img{
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+form .below_image{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  text-align: center;
+  border-bottom: 1px solid #dbdbd2;
+  margin-bottom: 25px;
+}
+
+form .below_image__{
+  color: var(--white-color);
+  display: block;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+
+.popup-validator form {
+  filter: brightness(100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-validator form h3 {
+  text-align: center;
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+.popup-validator form input[type="number"] {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 2px 5px 2px 15px;
+  font-size: 1.4rem;
+  background: none;
+  text-align: center;
+  color: #FFFFFF;   
+  border: 2px solid #0d6efd;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+{     
+-webkit-text-fill-color: var(--green-color);
+transition: background-color 5000s ease-in-out 0s;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.popup-validator form input[type="number"]::placeholder{
+  color: white;
+  opacity: .3;
+
+}
+
+
+.popup-validator form input[type="submit"] {
+  padding: 5px;
+  font-size: 1.2rem;
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+  cursor: pointer;
+  transition: all 250ms ease;
+  width: 100px;
+  border-radius: 5px;
+  margin:0 auto 50px;
+  display: block;
+}
+
+.popup-validator form input[type="submit"]:hover{
+  background: #007bff;
+  color: var(--white-color);
+}
+
+.popup-validator form p {
+  bottom: 1px;
+  text-align: center;
+  color: var(--white-color);
+
+}
+
+.popup-validator form .login_link {
+  text-decoration: underline;
+  color: var(--green-color);
+  transition: all 150ms linear;
+}
+
+.popup-validator form .login_link:hover{
+  opacity: .8;
+}
+
+.back_link{
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  color: crimson;
+  font-size: 2rem;
+  z-index: 1000;
+  transition: all 150ms linear;
+}
+
+.back_link:hover{
+  color: crimson;
+  opacity: .8;
+}
+
+
+.parent_container__{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  
+}
+
+.progress_container ul {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+
+form img{
+  display: block;
+  margin: 5px auto;
+}
+
+.progress_container ul li {
+  list-style: none;
+  font-size: 2rem;
+  width: 60px;
+  height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.progress {
+  width: 80%;
+  margin: 20px auto;
+  height: 20px;
+}
+
+.progress-bar.progress-bar-striped.progress-bar-animated {
+  background-color: green;
+} 
+
+.btn_old_transferee{
+  width: 250px;
+}
+
+.steps_reg{
+  animation: reg_tab_animate 250ms linear;
+}
+
+@keyframes reg_tab_animate {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.btn_nxt_prv{
+  width: 120px;
+}
+
+.pass-req{
+  display: block;
+}
+.pass-input:focus ~ .password-validate{
+  height: 125px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.password-validate{
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 150ms linear;
+}
